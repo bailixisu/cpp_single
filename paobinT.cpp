@@ -70,6 +70,7 @@ int main(){
                         if(stk[t]&stk[k])continue;
                         if(dp[i-1][j][k]==-1)continue;
                         dp[i][k][t] =max(dp[i][k][t],dp[i-1][j][k]+num[t]);
+                        printf("dp[%d][%d][%d]=%d\n",i-1,k-1,t-1,dp[i][k][t]);
                     }
                 }
            }
@@ -80,6 +81,7 @@ int main(){
        for(k = 1; k <= top; ++k)
        ans = max(ans,dp[i][j][k]);
        printf("%d\n",ans);
+
    }
    return 0;
 }

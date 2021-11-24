@@ -60,7 +60,7 @@ int main()
                     if(stack[j]&stack[t]) continue;
                     for(int k=0;k<top;k++)
                     {
-                        if(stack[j]&stack[t]) continue;
+                        if(stack[j]&stack[k]) continue;
                         if(dp[i-1][t][k]==-1)  continue;
                         dp[i][k][j]=max(dp[i][k][j],dp[i-1][t][k]+num[j]);
                     }
