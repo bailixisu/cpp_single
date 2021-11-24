@@ -68,10 +68,9 @@ int main()
           }
     }
     int ans=0;
-    for(int i=0;i<n;i++)
     for(int j=0;j<top;j++)
     for(int k=0;k<top;k++)
-    ans=max(ans,dp[i][j][k]);
+    ans=max(ans,dp[n-1][j][k]);
     printf("%d\n",ans);
     return 0;
 }
